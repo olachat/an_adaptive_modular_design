@@ -1,0 +1,44 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Flutter: Attach to Device",
+            "type": "dart",
+            "request": "attach"
+        },
+        {
+            "name": "debug",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "type": "dart",
+            "args": [
+                "--dart-define=BUILD_TIME=$(date +%s)",
+                "--dart-define=LOG_LEVEL=debug"// info,debug, warning, error
+            ]
+        },
+        {
+            "name": "test",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "type": "dart",
+            "toolArgs": [
+                "--dart-define",
+                "TEST_MODE=true"
+            ]
+        },
+        {
+            "name": "Profile",
+            "type": "dart",
+            "request": "launch",
+            "program": "lib/main.dart",
+            "flutterMode": "profile",
+            "args": [
+                "--dart-define=BUILD_TIME=$(date +%s)",
+                "--dart-define=LOG_LEVEL=error" // info,debug, warning, error
+            ]
+        },
+    ]
+}

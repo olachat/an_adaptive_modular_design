@@ -1,0 +1,8 @@
+syntax = "proto3";
+
+package login_cmd;
+enum UserRole {
+    REG = 0;
+    NORMAL = 1;
+    GOD = 2;
+}

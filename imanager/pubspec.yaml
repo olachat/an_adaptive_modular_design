@@ -1,0 +1,40 @@
+name: imanager 
+description: A module manager Flutter package project.
+version: 0.0.1
+author:
+homepage:
+
+environment:
+  sdk: ">=3.0.0 <4.0.0" # Update the SDK constraint to 3.0.0 or higher
+  flutter: ">=2.2.1"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  protobuf: ^3.1.0
+
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  
+  assets_gen: any
+  build_runner: ^2.3.0
+
+
+assets_gen:
+  omit_path_levels: 2
+  exclude:
+    - assets/images_*/**
+
+
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter.
+flutter:
+  uses-material-design: true
+
+  assets:
+  - assets/images/

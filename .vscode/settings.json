@@ -1,0 +1,26 @@
+{
+    "editor.formatOnSave": true,
+    "[dart]": {
+        "editor.formatOnSave": true
+    },
+    "[dart/flutter]": {
+        "editor.formatOnSave": true
+    },
+    "dart.lineLength": 120,
+    "editor.codeActionsOnSave": {
+        "source.fixAll": "explicit"
+    },
+    "dart.testAdditionalArgs": [
+        "-j,",
+        "--concurrency=1",
+        "-r",
+        "github"
+    ],
+    "dart.flutterTestAdditionalArgs": [
+        "-j,",
+        "--concurrency=1",
+        "-r",
+        "github"
+    ],
+    "dart.flutterSdkPath": "~/workplace/flutter",
+}

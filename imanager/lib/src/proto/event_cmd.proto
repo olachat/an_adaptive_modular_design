@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package event_cmd;
+message Info {
+  string info = 1;
+}
+
+// Define another message
+message Command {
+ string action = 2;
+}
+
+// Define package info
+message PackageInfo {
+ string package = 1;
+ string moduel = 2;
+ string version = 3;
+}
+
+message Event {
+    PackageInfo package_info = 1;
+    Command command = 2;
+    Info info = 3;
+    string Others = 4;
+}
