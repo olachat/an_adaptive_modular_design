@@ -8,7 +8,12 @@ mixin BaseModule<T extends IModule> on IModule{
   }
 
   @override
-  Priority getInitPriority() {
+  Priority getInitPriorityTier() {
     return Priority.low;
+  }
+
+  @override
+  int getPriorityNumber() {
+    return 0;
   }
 }

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:imanager/imanager.dart';
 import 'package:login/src/model/login_data.dart';
-import 'package:imanager/src/proto/event_cmd.pb.dart';
-import 'package:imanager/src/proto/login.pb.dart';
+import 'package:imanager/src/proto/generated/event_cmd.pb.dart';
+import 'package:imanager/src/proto/generated/login.pb.dart';
 
 class LoginPage extends StatefulWidget {
   final String title;
@@ -77,10 +77,10 @@ class _LoginPage extends State<LoginPage> {
 
       if(LoginData.isFinishedRegistered){
         // not finished registered
-        ModuleManager.instance.emit(Login, UserRole.REG);
+        ModuleManager.instance.emit(Login, UserInfo(role: UserRole.REG));
       }else {
         // finished registered
-        ModuleManager.instance.emit(Login, UserRole.NORMAL);
+        ModuleManager.instance.emit(Login, UserInfo(role: UserRole.NORMAL, username: LoginData.userName));
       }
       setState(() {});
     });

@@ -1,7 +1,7 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:home_page/src/my_home_page.dart';
 import 'package:imanager/imanager.dart';
-import 'package:imanager/src/proto/event_cmd.pb.dart';
+import 'package:imanager/src/proto/generated/event_cmd.pb.dart';
 
 final class HomePageModule extends IHomePageModule{
 
@@ -13,8 +13,8 @@ final class HomePageModule extends IHomePageModule{
   }
 
   @override
-  Widget getHomePage() {
-    return const MyHomePage(title: "Home Page");
+  Widget getHomePage(String title) {
+    return MyHomePage(title: title);
   }
 
   @override

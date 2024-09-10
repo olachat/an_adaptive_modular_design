@@ -26,23 +26,23 @@ class Info extends $pb.GeneratedMessage {
     return $result;
   }
   Info._() : super();
-  factory Info.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Info.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Info.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Info.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Info', package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Info',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'info')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Info clone() => Info()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
   Info copyWith(void Function(Info) updates) => super.copyWith((message) => updates(message as Info)) as Info;
 
   $pb.BuilderInfo get info_ => _i;
@@ -58,7 +58,10 @@ class Info extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get info => $_getSZ(0);
   @$pb.TagNumber(1)
-  set info($core.String v) { $_setString(0, v); }
+  set info($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasInfo() => $_has(0);
   @$pb.TagNumber(1)
@@ -77,24 +80,25 @@ class Command extends $pb.GeneratedMessage {
     return $result;
   }
   Command._() : super();
-  factory Command.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Command.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Command.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Command.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Command', package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Command',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
     ..aOS(2, _omitFieldNames ? '' : 'action')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Command clone() => Command()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Command copyWith(void Function(Command) updates) => super.copyWith((message) => updates(message as Command)) as Command;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Command copyWith(void Function(Command) updates) =>
+      super.copyWith((message) => updates(message as Command)) as Command;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -109,7 +113,10 @@ class Command extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get action => $_getSZ(0);
   @$pb.TagNumber(2)
-  set action($core.String v) { $_setString(0, v); }
+  set action($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasAction() => $_has(0);
   @$pb.TagNumber(2)
@@ -136,26 +143,27 @@ class PackageInfo extends $pb.GeneratedMessage {
     return $result;
   }
   PackageInfo._() : super();
-  factory PackageInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory PackageInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory PackageInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory PackageInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PackageInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'PackageInfo',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'package')
     ..aOS(2, _omitFieldNames ? '' : 'moduel')
     ..aOS(3, _omitFieldNames ? '' : 'version')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   PackageInfo clone() => PackageInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  PackageInfo copyWith(void Function(PackageInfo) updates) => super.copyWith((message) => updates(message as PackageInfo)) as PackageInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  PackageInfo copyWith(void Function(PackageInfo) updates) =>
+      super.copyWith((message) => updates(message as PackageInfo)) as PackageInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -170,7 +178,10 @@ class PackageInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.String get package => $_getSZ(0);
   @$pb.TagNumber(1)
-  set package($core.String v) { $_setString(0, v); }
+  set package($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPackage() => $_has(0);
   @$pb.TagNumber(1)
@@ -179,7 +190,10 @@ class PackageInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get moduel => $_getSZ(1);
   @$pb.TagNumber(2)
-  set moduel($core.String v) { $_setString(1, v); }
+  set moduel($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasModuel() => $_has(1);
   @$pb.TagNumber(2)
@@ -188,7 +202,10 @@ class PackageInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get version => $_getSZ(2);
   @$pb.TagNumber(3)
-  set version($core.String v) { $_setString(2, v); }
+  set version($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasVersion() => $_has(2);
   @$pb.TagNumber(3)
@@ -218,26 +235,26 @@ class Event extends $pb.GeneratedMessage {
     return $result;
   }
   Event._() : super();
-  factory Event.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Event.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Event.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Event.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event', package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Event',
+      package: const $pb.PackageName(_omitMessageNames ? '' : 'event_cmd'), createEmptyInstance: create)
     ..aOM<PackageInfo>(1, _omitFieldNames ? '' : 'packageInfo', subBuilder: PackageInfo.create)
     ..aOM<Command>(2, _omitFieldNames ? '' : 'command', subBuilder: Command.create)
     ..aOM<Info>(3, _omitFieldNames ? '' : 'info', subBuilder: Info.create)
     ..aOS(4, _omitFieldNames ? '' : 'Others', protoName: 'Others')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Event clone() => Event()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
   Event copyWith(void Function(Event) updates) => super.copyWith((message) => updates(message as Event)) as Event;
 
   $pb.BuilderInfo get info_ => _i;
@@ -253,7 +270,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   PackageInfo get packageInfo => $_getN(0);
   @$pb.TagNumber(1)
-  set packageInfo(PackageInfo v) { setField(1, v); }
+  set packageInfo(PackageInfo v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasPackageInfo() => $_has(0);
   @$pb.TagNumber(1)
@@ -264,7 +284,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   Command get command => $_getN(1);
   @$pb.TagNumber(2)
-  set command(Command v) { setField(2, v); }
+  set command(Command v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCommand() => $_has(1);
   @$pb.TagNumber(2)
@@ -275,7 +298,10 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   Info get info => $_getN(2);
   @$pb.TagNumber(3)
-  set info(Info v) { setField(3, v); }
+  set info(Info v) {
+    setField(3, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasInfo() => $_has(2);
   @$pb.TagNumber(3)
@@ -286,13 +312,15 @@ class Event extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   $core.String get others => $_getSZ(3);
   @$pb.TagNumber(4)
-  set others($core.String v) { $_setString(3, v); }
+  set others($core.String v) {
+    $_setString(3, v);
+  }
+
   @$pb.TagNumber(4)
   $core.bool hasOthers() => $_has(3);
   @$pb.TagNumber(4)
   void clearOthers() => clearField(4);
 }
-
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
 const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');

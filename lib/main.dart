@@ -35,6 +35,8 @@ class MyApp extends StatefulWidget {
 }
 
 class _MyApp extends State<MyApp> implements EventCallback {
+
+  UserInfo? userInfo;
   @override
   void initState() {
     super.initState();
@@ -72,7 +74,7 @@ class _MyApp extends State<MyApp> implements EventCallback {
       return loginModule?.getRegisterPage() ?? const SizedBox();
     }
     final homePageModule = IHomePageModule.instance as IHomePageModule?;
-    return homePageModule?.getHomePage() ?? const SizedBox();
+    return homePageModule?.getHomePage("Hello ${userInfo?.username ?? 'amorous'}") ?? const SizedBox();
   }
 
   @override
@@ -80,11 +82,11 @@ class _MyApp extends State<MyApp> implements EventCallback {
     print("type:$type  data: ${data?.toString()}");
     switch (type) {
       case Login:
-        setState(() {});
-        break;
       case Logout:
-        setState(() {});
       case Register:
+        if (null != data && data is UserInfo) {
+          userInfo = data;
+        }
         setState(() {});
         break;
     }

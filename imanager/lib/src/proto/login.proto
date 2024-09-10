@@ -6,3 +6,8 @@ enum UserRole {
     NORMAL = 1;
     GOD = 2;
 }
+
+message UserInfo {
+    optional string username = 1;
+    optional UserRole role = 2;
+}

@@ -2,7 +2,12 @@ library imanager;
 
 import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
-import 'package:imanager/src/proto/event_cmd.pb.dart';
+import 'package:imanager/src/proto/generated/event_cmd.pb.dart';
+
+export 'src/proto/generated/event_cmd.pb.dart';
+export 'src/proto/generated/event_cmd.pbenum.dart';
+export 'src/proto/generated/login.pb.dart';
+export 'src/proto/generated/login.pbenum.dart';
 
 /// export
 
@@ -18,7 +23,6 @@ part 'src/module/iconfig_module.dart';
 part 'src/module/idebug_module.dart';
 part 'src/module/ihome_page_module.dart';
 part 'src/module/ilogin_module.dart';
-part 'src/module/ilog_module.dart';
 part 'src/module/ilocal_notification_module.dart';
 
 

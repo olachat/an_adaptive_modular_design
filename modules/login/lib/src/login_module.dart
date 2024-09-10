@@ -1,6 +1,6 @@
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:imanager/imanager.dart';
-import 'package:imanager/src/proto/event_cmd.pb.dart';
+import 'package:imanager/src/proto/generated/event_cmd.pb.dart';
 import 'package:login/src/login_page.dart';
 import 'package:login/src/model/login_data.dart';
 import 'package:login/src/register_page.dart';

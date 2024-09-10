@@ -7,7 +7,7 @@ import 'package:flutter/services.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:imanager/imanager.dart';
 import 'package:login/src/model/login_data.dart';
-import 'package:imanager/src/proto/login.pb.dart';
+import 'package:imanager/src/proto/generated/login.pb.dart';
 
 class RegisterPage extends StatefulWidget {
   final String title;
@@ -133,7 +133,7 @@ class _RegisterPage extends State<RegisterPage> {
       LoginData.isFinishedRegistered = true;
       setState(() {});
       Navigator.of(context).pop(); // Close the dialog
-      ModuleManager.instance.emit(Register, UserRole.NORMAL);
+      ModuleManager.instance.emit(Register, UserInfo(role: UserRole.NORMAL, username: LoginData.userName));
     });
   }
 }

@@ -16,6 +16,10 @@ abstract class IModuleInterface {
   Future<void> init(ModuleManager moduleManager);
   bool isInitialized();
   void registerWith();
+  
+  /// higher priority tier module will be initialized first
+  Priority getInitPriorityTier();
 
-  Priority getInitPriority();
+  /// higher priority module will be initialized first
+  int getPriorityNumber();
 }
