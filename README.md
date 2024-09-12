@@ -1,6 +1,6 @@
 # an_adaptive_modular_design
 
-A new Flutter project.
+An example demo for the Tech Sharing section of "An Adaptive modular design" 
 
 ## Getting Started
 
