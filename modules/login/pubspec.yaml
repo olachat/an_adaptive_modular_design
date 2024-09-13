@@ -20,15 +20,15 @@ dependencies:
 dev_dependencies:
   flutter_test:
     sdk: flutter
-  
-  assets_gen: any
+  mockito: ^5.0.16
+  # assets_gen: any
   build_runner: ^2.3.0
 
 
-assets_gen:
-  omit_path_levels: 2
-  exclude:
-    - assets/images_*/**
+# assets_gen:
+#   omit_path_levels: 2
+#   exclude:
+#     - assets/images_*/**
 
 
 
@@ -39,5 +39,5 @@ assets_gen:
 flutter:
   uses-material-design: true
 
-  assets:
-  - assets/images/
+  # assets:
+  # - assets/images/
