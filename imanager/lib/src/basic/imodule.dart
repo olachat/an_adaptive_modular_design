@@ -12,7 +12,7 @@ sealed class IModule implements EventCallback, IModuleInterface {
   /// This is used to ensure that implementers are using `extends` rather than
   /// `implements`.
   ///
-  /// Subclasses of [MockPlatformInterfaceMixin] are assumed to be valid in debug
+  /// Subclasses of [IModule] are assumed to be valid in debug
   /// builds.
   ///
   /// This is implemented as a static method so that it cannot be overridden
